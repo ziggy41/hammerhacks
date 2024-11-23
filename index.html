@@ -5,13 +5,41 @@
         <style>
            img {
                 width: 600px;
-                height:auto;
+                height: auto;
+            }
+            h1{
+                color:brown;
             }
         </style>
     </head>
-<body>
+    <body>
     <h1>my cool site</h1>
     <p>I think this html is neat</p>
-    <img src="https://en.wikipedia.org/wiki/File:Peter_Griffin.png"
-</body>
+    <img src=https://www.wallpaperflare.com/static/940/129/189/family-guy-peter-griffin-peter-griffin-wallpaper.jpg />
+
+    <blockquote>"Peter Griffin is a middle-class Irish American in his mid‑forties, who is a bespectacled, obese blue-collar worker with a prominent Rhode Island and Eastern Massachusetts accent."</blockquote>
+    <button>onclick=changeQuote(change)</button>
+    <script>
+        var index=0;
+
+        function changeQuote(){
+            var quotes = [
+                `"i really like web devolopment"`, 
+                `"i am enjoying this"`,
+                `"dumptruck"`
+            ];
+            alert("HI");
+
+            var blockquote = document.querySelector("blockquote");
+            blockquote.innerHTML=quotes[index];
+
+            index++;
+            if (index>=4){
+                index=0;
+            };
+
+        }
+    </script>
+
+    </body>
 </html>
