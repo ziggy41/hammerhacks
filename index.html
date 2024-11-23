@@ -18,7 +18,7 @@
     <img src=https://www.wallpaperflare.com/static/940/129/189/family-guy-peter-griffin-peter-griffin-wallpaper.jpg />
 
     <blockquote>"Peter Griffin is a middle-class Irish American in his mid‑forties, who is a bespectacled, obese blue-collar worker with a prominent Rhode Island and Eastern Massachusetts accent."</blockquote>
-    <button>onclick=changeQuote(change)</button>
+    <button onclick="changeQuote()">Change Quote</button>
     <script>
         var index=0;
 
@@ -27,8 +27,8 @@
                 `"i really like web devolopment"`, 
                 `"i am enjoying this"`,
                 `"dumptruck"`
+                `"help"`
             ];
-            alert("HI");
 
             var blockquote = document.querySelector("blockquote");
             blockquote.innerHTML=quotes[index];
